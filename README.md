@@ -10,5 +10,5 @@ Make sure you have at least .NET Core 3.0 Preview 5 SDK and Visual Studio 2019 P
 
 ## Download
 
-- [What's new in .NET Core 3.0 and C# 8.0](slides\VS2019-Launch-CS80.pptx)
-- [Getting to Know Visual Studio 2019 for Mac](slides\VS2019-Launch-VSMac.pptx)
+- [What's new in .NET Core 3.0 and C# 8.0](slides/VS2019-Launch-CS80.pptx)
+- [Getting to Know Visual Studio 2019 for Mac](slides/VS2019-Launch-VSMac.pptx)
