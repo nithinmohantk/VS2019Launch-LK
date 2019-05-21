@@ -18,6 +18,7 @@ namespace CSharp8Samples
 
             string text1 = null;
             // Warning: Cannot convert null to non-nullable reference
+
             string? text2 = null;
             string text3 = text2;
             // Warning: Possible null reference assignment
@@ -30,7 +31,7 @@ namespace CSharp8Samples
 
             //Enable Suppression of Static Flow Analysis Warning
 
-            string? text5; 
+            string? text5 = null; 
             if (object.ReferenceEquals(text5, null))
             {
                 var type = text5!.GetType();
@@ -41,5 +42,39 @@ namespace CSharp8Samples
 
             //System.Runtime.CompilerServices.NullableAttribute
         }
+
+
+        public static void Run2()
+        {
+            var myClass = new MyNullableDemoClass();
+
+            //100 lines of code. 
+            if (true) //Some condition. 
+            {
+                myClass = null;
+            }
+
+            //100 lines of code. 
+            if (myClass == null)
+            {
+                //Do something special here. 
+            }
+            //100 lines of code
+            myClass.SayHello();
+        }
     }
+
+
+    
+
+
+    class MyNullableDemoClass
+    {
+        public void SayHello()
+        {
+            Console.WriteLine("Hello");
+        }
+    }
+
+   
 }

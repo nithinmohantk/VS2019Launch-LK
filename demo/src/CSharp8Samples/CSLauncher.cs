@@ -28,7 +28,8 @@ namespace CSharp8Samples
 
         public static void LaunchNullables()
         {
-            NullableRefTypesSample.Run();
+            //NullableRefTypesSample.Run();
+            NullableRefTypesSample.Run2();
         }
     }
 }

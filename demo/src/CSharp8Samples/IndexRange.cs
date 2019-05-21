@@ -34,6 +34,14 @@ namespace CSharp8
 
             Index index = ^3;
             Range range = 4..7;
+
+
+            string s = "0123456789";
+            char lastChar = s[^1]; // lastChar = '9'
+            string startFromIndex2 = s[2..]; // startFromIndex2 = "23456789"
+
+            string substring1 = s[^10..]; // Replaces s.Substring(^10);
+            string substring2 = s[2..8];   // Replaces s.Substring(2..8);
         }
     }
 }
