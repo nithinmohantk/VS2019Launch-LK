@@ -9,19 +9,19 @@ namespace CSharp8
         {
             var conferences = new[]
             {
-                                             // index      from back
-                "NetWork",                   // 0          ^12
-                "WinDays",                   // 1          ^11
-                "Weblica",                   // 2          ^10     
-                "Tarabica",                  // 3          ^9
-                "NTK",                       // 4          ^8
-                "KulenDayz",                 // 5          ^7
-                "MSCommunity",               // 6          ^6
-                "CrisCon",                   // 7          ^5
-                "Sinergija",                 // 8          ^4
-                "AdvancedTechnologyDays",    // 9          ^3
-                "Thrive",                    // 10         ^2
-                "SQLSaturday"                // 11         ^1
+                                           // index      from back
+                "Letterkenny",             // 0          ^12
+                "Dublin",                  // 1          ^11
+                "Belfast",                 // 2          ^10     
+                "Londenderry",             // 3          ^9
+                "NTK",                     // 4          ^8
+                "DevDayz",                 // 5          ^7
+                "MSCommunity",             // 6          ^6
+                "DevOpsConf",              // 7          ^5
+                "AzureThursdays",          // 8          ^4
+                "AdvancedTechnologyDays",  // 9          ^3
+                "Thrive",                  // 10         ^2
+                "SQLSaturday"              // 11         ^1
             };
 
             var lastConferenceOfTheYear = conferences[^1];
@@ -35,6 +35,8 @@ namespace CSharp8
             Index index = ^3;
             Range range = 4..7;
 
+            var lastThreeConferences1 = conferences[range];
+            var lastThreeConferences2 = conferences[index];
 
             string s = "0123456789";
             char lastChar = s[^1]; // lastChar = '9'

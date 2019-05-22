@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  spareactsample:
+    image: ${DOCKER_REGISTRY-}spareactsample
+    build:
+      context: .
+      dockerfile: src/SpaReactSample/Dockerfile
